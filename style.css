@@ -71,14 +71,19 @@ header input {
   margin-right: 30px;
   margin-bottom: 20px;
   border-radius: 10px;
+  /* overflow:  ; */
 }
 
 .card.hide {
   display: none;
 }
 
-.card-header img {
+.card-header {
   height: 150px;
+}
+
+.card-header img {
+  height: 100%;
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -115,6 +120,7 @@ header input {
 
 .user-info {
   margin: 10px;
+  width: 150px;
 }
 
 .user-info h4 {
@@ -135,34 +141,22 @@ footer {
 .animated-bg {
   background-image: linear-gradient(
     to right,
-    #dadcdd 0%,
-    #edeef1 20%,
-    #f1f2f3 40%,
-    #e8eaec 100%
-  );
-  /* background-image: linear-gradient(
-    to right,
     #f6f7f8 0%,
     #edeef1 10%,
     #f6f7f8 20%,
     #f6f7f8 100%
-  ); */
+  );
   background-size: 200% 100%;
   animation: bgPos 1s linear infinite;
+}
+
+.animated-bg-text {
   border-radius: 50px;
   display: inline-block;
   margin: 0;
   height: 10px;
   width: 100%;
 }
-
-/* .animated-bg-text {
-  border-radius: 50px;
-  display: inline-block;
-  margin: 0;
-  height: 10px;
-  width: 100%;
-} */
 
 @keyframes bgPos {
   0% {

@@ -1,6 +1,7 @@
-const body = document.getElementById("body");
 const content = document.querySelector(".content");
 const input = document.getElementById("input");
+
+const html_cards = document.querySelectorAll(".card");
 
 const users = [];
 
@@ -61,8 +62,8 @@ const displayUser = async () => {
     card.appendChild(cardContent);
     content.appendChild(card);
 
-    body.classList.remove("animated-bg");
+    html_cards.forEach((html_card) => (html_card.style.display = "none"));
   });
 };
 
-setTimeout(displayUser, 1000);
+setTimeout(displayUser, 1500);
